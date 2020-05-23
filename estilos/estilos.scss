@@ -1,3 +1,121 @@
-.home{
+//import
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+// @import "header";
+
+//Variables
+$colorBlack: rgba(0, 0, 0, 0.801218);
+$colorButton: rgba(157, 151, 151, 0.541521);
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
     width: 100%;
+    height: 65px;
+    background: $colorBlack;
+    display: flex;
+
+    .menu_bar {
+        display: none;
+    }
+
+    nav {
+        width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+
+        .logo {
+            margin-right: 87px;
+        }
+
+        ul {
+            list-style: none;
+            display: inline-flex;
+            color: #ffffff;
+
+            .title-list {
+                margin-right: 27px;
+                font-weight: bold;
+                font-size: 21px;
+
+                a {
+                    color: #ffffff;
+                }
+            }
+
+        }
+    }
+}
+
+.hero-content {
+    background-color: red;
+
+
+
+    .hero-img {
+        background-image: url(../images/portada.png);
+        width: 100%;
+        height: 843px;
+        background-size: cover;
+        background-position: center;
+
+        .hero-content-box {
+            width: 1280px;
+            margin: 0 auto;
+
+            .text-content {
+                color: #ffffff;
+                padding-top: 207px;
+
+                h3 {
+                    font-size: 28px;
+                }
+
+                h1 {
+                    font-size: 120px;
+                    width: 100%;
+                    max-width: 500px;
+                    line-height: 100px;
+                    padding-top: 18px;
+                }
+            }
+
+            .button-box {
+                width: 100%;
+                margin-top: 30px;
+
+                .btn-hero {
+                    width: 210px;
+                    height: 65px;
+                    background-color: rgba(157, 151, 151, 0.541521);
+                    border-radius: 9px;
+                    font-size: 21px;
+                    padding: 14px 30px;
+                    color: #fff;
+                    margin-right: 35px;
+                }
+            }
+            .infostemporada{
+                margin-top: 30px;
+                color: #fff;
+                width: 100%;
+                max-width: 400px;
+
+                .text{
+                    margin-bottom: 10px;
+                    line-height: 25px;
+                }
+            }
+        }
+
+    }
+
 }
