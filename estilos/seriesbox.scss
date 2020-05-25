@@ -1,0 +1,125 @@
+
+/* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
+.contenedor-titulo-controles {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    h3 {
+        color: #fff;
+        font-size: 30px;
+    }
+
+
+}
+
+/* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
+.seriesbox{
+    background-color: #000000;
+
+.peliculas-recomendadas {
+    padding-bottom: 70px;
+    max-width: 1280px;
+    margin: 0 auto;
+    
+
+    .contenedor-principal {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .flecha-izquierda {
+            position: absolute;
+            border: none;
+            background: rgba(0, 0, 0, 0.3);
+            font-size: 40px;
+            height: 50%;
+            top: calc(50% - 25%);
+            line-height: 40px;
+            width: 50px;
+            color: #fff;
+            cursor: pointer;
+            z-index: 500;
+            transition: .2s ease all;
+            left: 0;
+
+            &:hover {
+                background: rgba(0, 0, 0, .9);
+            }
+            @media screen and (max-width: 800px){
+                display: none;
+            }
+        }
+
+        .flecha-derecha {
+            position: absolute;
+            border: none;
+            background: rgba(0, 0, 0, 0.3);
+            font-size: 40px;
+            height: 50%;
+            top: calc(50% - 25%);
+            line-height: 40px;
+            width: 50px;
+            color: #fff;
+            cursor: pointer;
+            z-index: 500;
+            transition: .2s ease all;
+            right: 0;
+
+            &:hover {
+                background: rgba(0, 0, 0, .9);
+            }
+            @media screen and (max-width: 800px){
+                display: none;
+            }
+        }
+    }
+
+    /* ---- ----- ----- Carousel ----- ----- ----- */
+    .contenedor-carousel {
+        width: 100%;
+        padding: 20px 0;
+        overflow: hidden;
+        scroll-behavior: smooth;
+
+        .carousel {
+            display: flex;
+            flex-wrap: nowrap;
+            @media screen and (max-width: 800px){
+		        grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                overflow: auto;
+            }
+
+            .pelicula {
+                min-width: 20%;
+                transition: .3s ease all;
+                box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+                margin-right: 16px;
+                .hover {
+                    transform: scale(1.2);
+                    transform-origin: center;
+                }
+                img {
+                    width: 100%;
+                    vertical-align: top;
+                }
+                .progressbar{
+                    width: 75%;
+                    height: 7px;
+                    background-color: #797979;
+                    border-radius: 4px;
+                    margin: 10px auto 0px;
+                    overflow: hidden;
+                    .progress{
+                        width: 43%;
+                        background-color: red;
+                        height: 7px;
+                    }
+                }
+
+                }
+            }
+        }
+    }
+}

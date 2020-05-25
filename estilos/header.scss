@@ -1,0 +1,52 @@
+//Variables
+$colorBlack: rgba(0, 0, 0, 0.801218);
+$colorButton: rgba(157, 151, 151, 0.541521);
+
+
+header {
+    max-width: 100%;
+    height: 65px;
+    background: $colorBlack;
+    display: flex;
+
+    .menu_bar {
+        display: none;
+
+
+
+
+    }
+
+    nav {
+        width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+
+
+        .logo {
+            margin-right: 87px;
+
+        }
+
+        ul {
+            list-style: none;
+            display: inline-flex;
+            color: #ffffff;
+
+
+            li {}
+
+            .title-list {
+                margin-right: 27px;
+                font-weight: bold;
+                font-size: 21px;
+
+                a {
+                    color: #ffffff;
+                }
+            }
+
+        }
+    }
+}

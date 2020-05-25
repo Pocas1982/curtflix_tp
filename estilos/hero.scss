@@ -1,0 +1,72 @@
+.hero-content {
+    background-color: red;
+
+
+
+    .hero-img {
+        background-image: url(../images/portada.png);
+        width: 100%;
+        height: 843px;
+        background-size: cover;
+        background-position: center;
+
+        .hero-content-box {
+            max-width: 1280px;
+            margin: 0 auto;
+
+            .text-content {
+                color: #ffffff;
+                padding-top: 207px;
+
+                h3 {
+                    font-size: 28px;
+                }
+
+                h1 {
+                    font-size: 120px;
+                    width: 100%;
+                    max-width: 500px;
+                    line-height: 100px;
+                    padding-top: 18px;
+                }
+            }
+
+            .button-box {
+                width: 100%;
+                margin-top: 30px;
+
+                .btn-hero {
+                    width: 210px;
+                    height: 65px;
+                    background-color: rgba(157, 151, 151, 0.541521);
+                    border-radius: 9px;
+                    font-size: 21px;
+                    padding: 14px 30px;
+                    color: #fff;
+                    margin-right: 35px;
+                    &:hover{
+                        background-color: #ffffff;
+                        color: #000000;
+                    }
+                }
+            }
+
+            .infostemporada {
+                margin-top: 30px;
+                color: #fff;
+                width: 100%;
+                max-width: 600px;
+                font-size: 50px;
+
+                .text {
+                    margin-bottom: 10px;
+                    line-height: 33px;
+                    font-size: 24px;
+
+                }
+            }
+        }
+
+    }
+
+}

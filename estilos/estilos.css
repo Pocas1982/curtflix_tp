@@ -1,15 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-size: 15px;
-  text-decoration: none;
-  font-family: "Open Sans", sans-serif;
-}
-
 header {
-  width: 100%;
+  max-width: 100%;
   height: 65px;
   background: rgba(0, 0, 0, 0.801218);
   display: flex;
@@ -51,7 +42,7 @@ header nav ul .title-list a {
   background-position: center;
 }
 .hero-content .hero-img .hero-content-box {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 .hero-content .hero-img .hero-content-box .text-content {
@@ -82,15 +73,188 @@ header nav ul .title-list a {
   color: #fff;
   margin-right: 35px;
 }
+.hero-content .hero-img .hero-content-box .button-box .btn-hero:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
 .hero-content .hero-img .hero-content-box .infostemporada {
   margin-top: 30px;
   color: #fff;
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
+  font-size: 50px;
 }
 .hero-content .hero-img .hero-content-box .infostemporada .text {
   margin-bottom: 10px;
-  line-height: 25px;
+  line-height: 33px;
+  font-size: 24px;
 }
+
+/* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
+.contenedor-titulo-controles {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.contenedor-titulo-controles h3 {
+  color: #fff;
+  font-size: 30px;
+}
+
+/* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
+.seriesbox {
+  background-color: #000000;
+}
+.seriesbox .peliculas-recomendadas {
+  padding-bottom: 70px;
+  max-width: 1280px;
+  margin: 0 auto;
+  /* ---- ----- ----- Carousel ----- ----- ----- */
+}
+.seriesbox .peliculas-recomendadas .contenedor-principal {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.seriesbox .peliculas-recomendadas .contenedor-principal .flecha-izquierda {
+  position: absolute;
+  border: none;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 40px;
+  height: 50%;
+  top: calc(50% - 25%);
+  line-height: 40px;
+  width: 50px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 500;
+  transition: 0.2s ease all;
+  left: 0;
+}
+.seriesbox .peliculas-recomendadas .contenedor-principal .flecha-izquierda:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+@media screen and (max-width: 800px) {
+  .seriesbox .peliculas-recomendadas .contenedor-principal .flecha-izquierda {
+    display: none;
+  }
+}
+.seriesbox .peliculas-recomendadas .contenedor-principal .flecha-derecha {
+  position: absolute;
+  border: none;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 40px;
+  height: 50%;
+  top: calc(50% - 25%);
+  line-height: 40px;
+  width: 50px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 500;
+  transition: 0.2s ease all;
+  right: 0;
+}
+.seriesbox .peliculas-recomendadas .contenedor-principal .flecha-derecha:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+@media screen and (max-width: 800px) {
+  .seriesbox .peliculas-recomendadas .contenedor-principal .flecha-derecha {
+    display: none;
+  }
+}
+.seriesbox .peliculas-recomendadas .contenedor-carousel {
+  width: 100%;
+  padding: 20px 0;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.seriesbox .peliculas-recomendadas .contenedor-carousel .carousel {
+  display: flex;
+  flex-wrap: nowrap;
+}
+@media screen and (max-width: 800px) {
+  .seriesbox .peliculas-recomendadas .contenedor-carousel .carousel {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    overflow: auto;
+  }
+}
+.seriesbox .peliculas-recomendadas .contenedor-carousel .carousel .pelicula {
+  min-width: 20%;
+  transition: 0.3s ease all;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  margin-right: 16px;
+}
+.seriesbox .peliculas-recomendadas .contenedor-carousel .carousel .pelicula .hover {
+  transform: scale(1.2);
+  transform-origin: center;
+}
+.seriesbox .peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
+  width: 100%;
+  vertical-align: top;
+}
+.seriesbox .peliculas-recomendadas .contenedor-carousel .carousel .pelicula .progressbar {
+  width: 75%;
+  height: 7px;
+  background-color: #797979;
+  border-radius: 4px;
+  margin: 10px auto 0px;
+  overflow: hidden;
+}
+.seriesbox .peliculas-recomendadas .contenedor-carousel .carousel .pelicula .progressbar .progress {
+  width: 43%;
+  background-color: red;
+  height: 7px;
+}
+
+footer {
+  background-color: #000000;
+  height: 80px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* .series-content{
+    background-color: #000000;
+    display: flex;
+
+
+    .series-wrapper{
+        max-width: 1280px;
+        margin: 0 auto;
+
+
+        .series-img{
+            display: flex;
+            overflow-x: auto;
+            width: 100%;
+            scroll-snap-type: x mandatory;
+
+
+
+
+            .serie{
+                margin-right: 16px;
+                scroll-snap-align: center;
+            }
+
+        }
+        .title{
+            color: #fff;
+            font-size: 24px;
+            margin-bottom: 22px;
+        }
+    }
+    .seriesbox{
+        padding-top: 54px;
+    }
+} */
 
 /*# sourceMappingURL=estilos.css.map */
