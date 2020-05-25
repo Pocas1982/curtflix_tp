@@ -20,6 +20,7 @@
 
                 h3 {
                     font-size: 28px;
+                    font-weight: 100;
                 }
 
                 h1 {
@@ -44,9 +45,13 @@
                     padding: 14px 30px;
                     color: #fff;
                     margin-right: 35px;
-                    &:hover{
+                    transition: 600ms;
+                   
+
+                    &:hover {
                         background-color: #ffffff;
                         color: #000000;
+                      
                     }
                 }
             }
@@ -68,5 +73,6 @@
         }
 
     }
+    
 
 }

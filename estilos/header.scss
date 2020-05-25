@@ -2,18 +2,19 @@
 $colorBlack: rgba(0, 0, 0, 0.801218);
 $colorButton: rgba(157, 151, 151, 0.541521);
 
+html {
+    scroll-behavior: smooth;
+}
 
 header {
-    max-width: 100%;
+    width: 100%;
     height: 65px;
     background: $colorBlack;
     display: flex;
+    position: fixed;
 
     .menu_bar {
         display: none;
-
-
-
 
     }
 
@@ -39,11 +40,15 @@ header {
 
             .title-list {
                 margin-right: 27px;
-                font-weight: bold;
                 font-size: 21px;
 
                 a {
-                    color: #ffffff;
+                    color: #aaaaaa;
+                    transition: color 400ms;
+
+                    &:hover {
+                        color: #ffffff;
+                    }
                 }
             }
 

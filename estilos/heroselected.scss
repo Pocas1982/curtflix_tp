@@ -1,0 +1,110 @@
+.hero-content {
+    background-color: red;
+
+
+
+    .hero-img-selected {
+        background-image: url(../images/breakingbad.png);
+        width: 100%;
+        height: 843px;
+        background-size: cover;
+        background-position: center;
+
+        .hero-content-box {
+            max-width: 1280px;
+            margin: 0 auto;
+
+            .text-content {
+                padding-top: 40px;
+
+               .infodetails{
+                margin: -30px 0 60px;
+                   .info{
+                    font-size: 18px;
+                    color: #ffffff;
+                    font-weight: bold;
+                    margin-right: 10px;
+                   }
+
+                .coincidence{
+                    color: #009C04;                   
+                    font-weight: bold;
+                }
+                .year{
+                    color: #ffffff;
+                   
+                }
+                .greaterthan{
+                    border: 1px solid #ffffff;
+                    border-radius: 6px;
+                    padding: 3px;          
+                   
+                }
+                .season{}
+               }
+            }
+
+            .button-box {
+                width: 100%;
+                margin: 30px 0 60px;
+
+                .btn-hero {
+                    width: 210px;
+                    height: 65px;
+                    background-color: rgba(157, 151, 151, 0.541521);
+                    border-radius: 9px;
+                    font-size: 21px;
+                    padding: 14px 30px;
+                    color: #fff;
+                    margin-right: 35px;
+                    transition: 400ms;
+
+                    &:hover {
+                        background-color: red;
+                        color: #ffffff;
+                    }
+                }
+                svg {
+                    border: 1px solid #fff;
+                    padding: 7px;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    position: relative;
+                    top: 17px;
+                    margin-right: 10px;
+                    &:hover{
+                        border: 2px solid #fff;
+                        transition: transform 350ms cubic-bezier(0.86, 0, 0.07, 1);
+                        transform: scale(1.13);
+                    }
+                }
+            }
+           
+
+            .infostemporada {
+                margin-top: 30px;
+                color: #fff;
+                width: 100%;
+                max-width: 600px;
+                font-size: 50px;
+
+                .text {
+                    margin-bottom: 10px;
+                    line-height: 33px;
+                    font-size: 24px;                    
+
+                }
+            }
+        }
+        .grandient-bg{
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, #000000 100%);
+            width: 100%;
+            height: 300px;
+            margin-top: -130px;
+        }
+
+    }
+    
+
+}

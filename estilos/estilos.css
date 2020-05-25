@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 header {
-  max-width: 100%;
+  width: 100%;
   height: 65px;
   background: rgba(0, 0, 0, 0.801218);
   display: flex;
+  position: fixed;
 }
 header .menu_bar {
   display: none;
@@ -24,10 +29,13 @@ header nav ul {
 }
 header nav ul .title-list {
   margin-right: 27px;
-  font-weight: bold;
   font-size: 21px;
 }
 header nav ul .title-list a {
+  color: #aaaaaa;
+  transition: color 400ms;
+}
+header nav ul .title-list a:hover {
   color: #ffffff;
 }
 
@@ -51,6 +59,7 @@ header nav ul .title-list a {
 }
 .hero-content .hero-img .hero-content-box .text-content h3 {
   font-size: 28px;
+  font-weight: 100;
 }
 .hero-content .hero-img .hero-content-box .text-content h1 {
   font-size: 120px;
@@ -72,6 +81,7 @@ header nav ul .title-list a {
   padding: 14px 30px;
   color: #fff;
   margin-right: 35px;
+  transition: 600ms;
 }
 .hero-content .hero-img .hero-content-box .button-box .btn-hero:hover {
   background-color: #ffffff;
@@ -90,6 +100,97 @@ header nav ul .title-list a {
   font-size: 24px;
 }
 
+.hero-content {
+  background-color: red;
+}
+.hero-content .hero-img-selected {
+  background-image: url(../images/breakingbad.png);
+  width: 100%;
+  height: 843px;
+  background-size: cover;
+  background-position: center;
+}
+.hero-content .hero-img-selected .hero-content-box {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.hero-content .hero-img-selected .hero-content-box .text-content {
+  padding-top: 40px;
+}
+.hero-content .hero-img-selected .hero-content-box .text-content .infodetails {
+  margin: -30px 0 60px;
+}
+.hero-content .hero-img-selected .hero-content-box .text-content .infodetails .info {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.hero-content .hero-img-selected .hero-content-box .text-content .infodetails .coincidence {
+  color: #009C04;
+  font-weight: bold;
+}
+.hero-content .hero-img-selected .hero-content-box .text-content .infodetails .year {
+  color: #ffffff;
+}
+.hero-content .hero-img-selected .hero-content-box .text-content .infodetails .greaterthan {
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  padding: 3px;
+}
+.hero-content .hero-img-selected .hero-content-box .button-box {
+  width: 100%;
+  margin: 30px 0 60px;
+}
+.hero-content .hero-img-selected .hero-content-box .button-box .btn-hero {
+  width: 210px;
+  height: 65px;
+  background-color: rgba(157, 151, 151, 0.541521);
+  border-radius: 9px;
+  font-size: 21px;
+  padding: 14px 30px;
+  color: #fff;
+  margin-right: 35px;
+  transition: 400ms;
+}
+.hero-content .hero-img-selected .hero-content-box .button-box .btn-hero:hover {
+  background-color: red;
+  color: #ffffff;
+}
+.hero-content .hero-img-selected .hero-content-box .button-box svg {
+  border: 1px solid #fff;
+  padding: 7px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  top: 17px;
+  margin-right: 10px;
+}
+.hero-content .hero-img-selected .hero-content-box .button-box svg:hover {
+  border: 2px solid #fff;
+  transition: transform 350ms cubic-bezier(0.86, 0, 0.07, 1);
+  transform: scale(1.13);
+}
+.hero-content .hero-img-selected .hero-content-box .infostemporada {
+  margin-top: 30px;
+  color: #fff;
+  width: 100%;
+  max-width: 600px;
+  font-size: 50px;
+}
+.hero-content .hero-img-selected .hero-content-box .infostemporada .text {
+  margin-bottom: 10px;
+  line-height: 33px;
+  font-size: 24px;
+}
+.hero-content .hero-img-selected .grandient-bg {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, #000000 100%);
+  width: 100%;
+  height: 300px;
+  margin-top: -130px;
+}
+
 /* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
 .contenedor-titulo-controles {
   display: flex;
@@ -99,6 +200,7 @@ header nav ul .title-list a {
 .contenedor-titulo-controles h3 {
   color: #fff;
   font-size: 30px;
+  font-weight: 100;
 }
 
 /* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
@@ -185,7 +287,7 @@ header nav ul .title-list a {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   margin-right: 16px;
 }
-.seriesbox .peliculas-recomendadas .contenedor-carousel .carousel .pelicula .hover {
+.seriesbox .peliculas-recomendadas .contenedor-carousel .carousel .pelicula:hover {
   transform: scale(1.2);
   transform-origin: center;
 }
@@ -200,11 +302,15 @@ header nav ul .title-list a {
   border-radius: 4px;
   margin: 10px auto 0px;
   overflow: hidden;
+  /*   &:hover
+  .progress{
+      width: 100%;
+  } */
 }
 .seriesbox .peliculas-recomendadas .contenedor-carousel .carousel .pelicula .progressbar .progress {
-  width: 43%;
+  width: 45%;
+  height: 100%;
   background-color: red;
-  height: 7px;
 }
 
 footer {
