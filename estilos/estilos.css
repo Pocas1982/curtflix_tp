@@ -5,38 +5,97 @@ html {
 
 header {
   width: 100%;
-  height: 65px;
-  background: rgba(0, 0, 0, 0.801218);
-  display: flex;
-  position: fixed;
-}
-header .menu_bar {
-  display: none;
-}
-header nav {
-  width: 1280px;
-  margin: 0 auto;
+  height: 70px;
   display: flex;
   align-items: center;
+  background: #232323;
+  color: #ccc;
+  padding-left: 124px;
 }
-header nav .logo {
-  margin-right: 87px;
+@media screen and (max-width: 678px) {
+  header {
+    padding-left: 20px;
+  }
 }
-header nav ul {
+
+.logo {
+  letter-spacing: 3px;
+}
+
+@media screen and (max-width: 678px) {
+  .logo-img {
+    position: relative;
+    left: 40px;
+    top: 3px;
+    width: 80%;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+@media screen and (max-width: 678px) {
+  .nav {
+    margin: 0;
+    background: #343434;
+    position: absolute;
+    left: -100%;
+    top: 70px;
+    width: 50%;
+    height: calc(100% - 70px);
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+    transition: all 400ms;
+    z-index: 1;
+  }
+}
+
+.navlink {
   list-style: none;
-  display: inline-flex;
-  color: #ffffff;
+  margin: 0 16px 0 0;
 }
-header nav ul .title-list {
-  margin-right: 27px;
-  font-size: 21px;
+@media screen and (max-width: 678px) {
+  .navlink {
+    text-align: center;
+  }
 }
-header nav ul .title-list a {
-  color: #aaaaaa;
+
+.navlink a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1.2em;
   transition: color 400ms;
 }
-header nav ul .title-list a:hover {
-  color: #ffffff;
+.navlink a:hover {
+  color: #b3b3b3;
+}
+
+.burger {
+  font-size: 1.2em;
+  display: none;
+}
+@media screen and (max-width: 678px) {
+  .burger {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  i.fas.fa-bars, i.fas.fa-times {
+    font-size: 30px;
+    float: left;
+    position: relative;
+    right: 150px;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .nav-active {
+    left: 0;
+  }
 }
 
 .hero-content {
@@ -49,17 +108,37 @@ header nav ul .title-list a:hover {
   background-size: cover;
   background-position: center;
 }
+@media screen and (max-width: 678px) {
+  .hero-content .hero-img {
+    height: 315px;
+  }
+}
 .hero-content .hero-img .hero-content-box {
   max-width: 1280px;
   margin: 0 auto;
+}
+@media screen and (max-width: 678px) {
+  .hero-content .hero-img .hero-content-box {
+    padding-left: 14px;
+  }
 }
 .hero-content .hero-img .hero-content-box .text-content {
   color: #ffffff;
   padding-top: 207px;
 }
+@media screen and (max-width: 678px) {
+  .hero-content .hero-img .hero-content-box .text-content {
+    padding-top: 87px;
+  }
+}
 .hero-content .hero-img .hero-content-box .text-content h3 {
   font-size: 28px;
   font-weight: 100;
+}
+@media screen and (max-width: 678px) {
+  .hero-content .hero-img .hero-content-box .text-content h3 {
+    display: none;
+  }
 }
 .hero-content .hero-img .hero-content-box .text-content h1 {
   font-size: 120px;
@@ -67,6 +146,13 @@ header nav ul .title-list a:hover {
   max-width: 500px;
   line-height: 100px;
   padding-top: 18px;
+}
+@media screen and (max-width: 678px) {
+  .hero-content .hero-img .hero-content-box .text-content h1 {
+    font-size: 24px;
+    line-height: 0px;
+    padding-bottom: 13px;
+  }
 }
 .hero-content .hero-img .hero-content-box .button-box {
   width: 100%;
@@ -83,6 +169,12 @@ header nav ul .title-list a:hover {
   margin-right: 35px;
   transition: 600ms;
 }
+@media screen and (max-width: 678px) {
+  .hero-content .hero-img .hero-content-box .button-box .btn-hero {
+    margin-right: 10px;
+    font-size: 16px;
+  }
+}
 .hero-content .hero-img .hero-content-box .button-box .btn-hero:hover {
   background-color: #ffffff;
   color: #000000;
@@ -92,12 +184,17 @@ header nav ul .title-list a:hover {
   color: #fff;
   width: 100%;
   max-width: 600px;
-  font-size: 50px;
 }
 .hero-content .hero-img .hero-content-box .infostemporada .text {
   margin-bottom: 10px;
   line-height: 33px;
   font-size: 24px;
+}
+@media screen and (max-width: 678px) {
+  .hero-content .hero-img .hero-content-box .infostemporada .text {
+    line-height: 20px;
+    font-size: 13px;
+  }
 }
 
 .hero-content {
@@ -110,15 +207,35 @@ header nav ul .title-list a:hover {
   background-size: cover;
   background-position: center;
 }
+@media screen and (max-width: 678px) {
+  .hero-content .hero-img-selected {
+    height: 315px;
+  }
+}
 .hero-content .hero-img-selected .hero-content-box {
   max-width: 1280px;
   margin: 0 auto;
 }
+@media screen and (max-width: 678px) {
+  .hero-content .hero-img-selected .hero-content-box {
+    padding-left: 14px;
+  }
+}
 .hero-content .hero-img-selected .hero-content-box .text-content {
   padding-top: 40px;
 }
+@media screen and (max-width: 678px) {
+  .hero-content .hero-img-selected .hero-content-box .text-content img {
+    width: 40%;
+  }
+}
 .hero-content .hero-img-selected .hero-content-box .text-content .infodetails {
   margin: -30px 0 60px;
+}
+@media screen and (max-width: 678px) {
+  .hero-content .hero-img-selected .hero-content-box .text-content .infodetails {
+    margin: 0px 0 50px;
+  }
 }
 .hero-content .hero-img-selected .hero-content-box .text-content .infodetails .info {
   font-size: 18px;
@@ -129,6 +246,11 @@ header nav ul .title-list a:hover {
 .hero-content .hero-img-selected .hero-content-box .text-content .infodetails .coincidence {
   color: #009C04;
   font-weight: bold;
+}
+@media screen and (max-width: 678px) {
+  .hero-content .hero-img-selected .hero-content-box .text-content .infodetails .coincidence {
+    display: none;
+  }
 }
 .hero-content .hero-img-selected .hero-content-box .text-content .infodetails .year {
   color: #ffffff;
@@ -153,6 +275,12 @@ header nav ul .title-list a:hover {
   margin-right: 35px;
   transition: 400ms;
 }
+@media screen and (max-width: 678px) {
+  .hero-content .hero-img-selected .hero-content-box .button-box .btn-hero {
+    margin-right: 10px;
+    font-size: 16px;
+  }
+}
 .hero-content .hero-img-selected .hero-content-box .button-box .btn-hero:hover {
   background-color: red;
   color: #ffffff;
@@ -167,6 +295,11 @@ header nav ul .title-list a:hover {
   top: 17px;
   margin-right: 10px;
 }
+@media screen and (max-width: 678px) {
+  .hero-content .hero-img-selected .hero-content-box .button-box svg {
+    display: none;
+  }
+}
 .hero-content .hero-img-selected .hero-content-box .button-box svg:hover {
   border: 2px solid #fff;
   transition: transform 350ms cubic-bezier(0.86, 0, 0.07, 1);
@@ -179,6 +312,11 @@ header nav ul .title-list a:hover {
   max-width: 600px;
   font-size: 50px;
 }
+@media screen and (max-width: 678px) {
+  .hero-content .hero-img-selected .hero-content-box .infostemporada {
+    display: none;
+  }
+}
 .hero-content .hero-img-selected .hero-content-box .infostemporada .text {
   margin-bottom: 10px;
   line-height: 33px;
@@ -189,6 +327,12 @@ header nav ul .title-list a:hover {
   width: 100%;
   height: 300px;
   margin-top: -130px;
+}
+@media screen and (max-width: 678px) {
+  .hero-content .hero-img-selected .grandient-bg {
+    margin-top: -100px;
+    height: 100px;
+  }
 }
 
 /* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
@@ -202,6 +346,11 @@ header nav ul .title-list a:hover {
   font-size: 30px;
   font-weight: 100;
 }
+@media screen and (max-width: 678px) {
+  .contenedor-titulo-controles h3 {
+    font-size: 18px;
+  }
+}
 
 /* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
 .seriesbox {
@@ -212,6 +361,11 @@ header nav ul .title-list a:hover {
   max-width: 1280px;
   margin: 0 auto;
   /* ---- ----- ----- Carousel ----- ----- ----- */
+}
+@media screen and (max-width: 678px) {
+  .seriesbox .peliculas-recomendadas {
+    padding-left: 14px;
+  }
 }
 .seriesbox .peliculas-recomendadas .contenedor-principal {
   display: flex;
@@ -287,6 +441,11 @@ header nav ul .title-list a:hover {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   margin-right: 16px;
 }
+@media screen and (max-width: 678px) {
+  .seriesbox .peliculas-recomendadas .contenedor-carousel .carousel .pelicula {
+    min-width: 45%;
+  }
+}
 .seriesbox .peliculas-recomendadas .contenedor-carousel .carousel .pelicula:hover {
   transform: scale(1.2);
   transform-origin: center;
@@ -307,6 +466,11 @@ header nav ul .title-list a:hover {
       width: 100%;
   } */
 }
+@media screen and (max-width: 678px) {
+  .seriesbox .peliculas-recomendadas .contenedor-carousel .carousel .pelicula .progressbar {
+    height: 4px;
+  }
+}
 .seriesbox .peliculas-recomendadas .contenedor-carousel .carousel .pelicula .progressbar .progress {
   width: 45%;
   height: 100%;
@@ -316,6 +480,69 @@ header nav ul .title-list a:hover {
 footer {
   background-color: #000000;
   height: 80px;
+}
+
+.chapter-wrapper {
+  background-color: #000000;
+}
+.chapter-wrapper .chapter-box {
+  width: 1280px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+@media screen and (max-width: 678px) {
+  .chapter-wrapper .chapter-box {
+    width: 95%;
+    margin-left: 14px;
+    padding-bottom: 20px;
+  }
+}
+.chapter-wrapper .chapter-box h3 {
+  color: #ffffff;
+  padding-bottom: 24px;
+  font-size: 35px;
+  display: inline-block;
+}
+@media screen and (max-width: 678px) {
+  .chapter-wrapper .chapter-box h3 {
+    font-size: 20px;
+  }
+}
+.chapter-wrapper .chapter-box .chapter-box-details {
+  display: flex;
+}
+.chapter-wrapper .chapter-box .chapter-box-details img {
+  width: 131px;
+  height: 75px;
+}
+.chapter-wrapper .chapter-box .chapter-box-details .info {
+  color: #ffffff;
+  margin-left: 15px;
+}
+.chapter-wrapper .chapter-box .chapter-box-details .info .title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-size: 24px;
+}
+@media screen and (max-width: 678px) {
+  .chapter-wrapper .chapter-box .chapter-box-details .info .title {
+    font-size: 14px;
+  }
+}
+.chapter-wrapper .chapter-box .chapter-box-details .info .description {
+  font-size: 20px;
+  font-weight: 100;
+}
+@media screen and (max-width: 678px) {
+  .chapter-wrapper .chapter-box .chapter-box-details .info .description {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 678px) {
+  .chapter-wrapper .chapter-box .chapter-box-details .info .description {
+    max-width: 215px;
+  }
 }
 
 * {

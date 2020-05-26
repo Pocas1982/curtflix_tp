@@ -1,25 +1,18 @@
-/* $(document).ready(main);
- 
-var contador = 1;
- 
-function main(){
-	$('.menu_bar').click(function(){
- 
-		if(contador == 1){
-			$('nav').animate({
-				left: '0'
-			});
-			contador = 0;
-		} else {
-			contador = 1;
-			$('nav').animate({
-				left: '-100%'
-			});
-		}
- 
-	});
- 
-}; */
+// Selection of HTML objects
+const burger = document.querySelector('.burger i');
+const nav = document.querySelector('.nav');
+
+// Defining a function
+function toggleNav() {
+    burger.classList.toggle('fa-bars');
+    burger.classList.toggle('fa-times');
+    nav.classList.toggle('nav-active');
+}
+
+// Calling the function after click event occurs
+burger.addEventListener('click', function() {
+    toggleNav();
+});
 
 // ----------------------------------------------------------------
 
