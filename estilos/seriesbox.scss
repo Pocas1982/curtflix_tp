@@ -8,10 +8,14 @@
         color: #fff;
         font-size: 30px;
         font-weight: 100;
+        @media screen and (max-width: 1024px){
+            font-size: 25px;
+        }
 
         @media screen and (max-width: 678px){
             font-size: 18px;
         }
+        
     }
 
 
@@ -27,9 +31,17 @@
         max-width: 1280px;
         margin: 0 auto;
 
+        @media screen and (max-width: 1024px){
+            padding-left: 35px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+
         @media screen and (max-width: 678px){
             padding-left: 14px;
+            padding-bottom: 10px;
         }
+       
 
 
         .contenedor-principal {

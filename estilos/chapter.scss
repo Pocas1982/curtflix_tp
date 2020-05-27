@@ -6,9 +6,12 @@
         width: 1280px;
         margin: 0 auto;
         padding-bottom: 30px;
+        @media screen and (max-width: 1024px){
+            width: 95%;
+            margin-left: 35px;
+        }
         
         @media screen and (max-width: 678px){
-            width: 95%;
             margin-left: 14px;
             padding-bottom: 20px;
         }
@@ -18,7 +21,10 @@
             padding-bottom: 24px;
             font-size: 35px;
             display: inline-block;
-
+            @media screen and (max-width: 1024px){
+                font-size: 25px;
+                padding-top: 20px;
+            }
             @media screen and (max-width: 678px){
                 font-size: 20px;
             }
@@ -50,12 +56,13 @@
                 .description{
                     font-size: 20px;
                     font-weight: 100;
-                    @media screen and (max-width: 678px){
-                        font-size: 10px;
-                    }
+                    // @media screen and (max-width: 1024px){
+                    //     font-size: 20px;
+                    // }
 
                     @media screen and (max-width: 678px){
-                        max-width: 215px;
+                        max-width: 230px;
+                        font-size: 13px;
                     }
                 }
             }

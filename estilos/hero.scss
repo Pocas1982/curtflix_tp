@@ -9,25 +9,37 @@
         height: 843px;
         background-size: cover;
         background-position: center;
+        @media screen and (max-width: 1024px){
+            height: 570px;
+        }
 
         @media screen and (max-width: 678px){
             height: 315px;
         }
+       
 
         .hero-content-box {
             max-width: 1280px;
             margin: 0 auto;
+            @media screen and (max-width: 1024px){
+                padding-left: 35px;
+            }
 
             @media screen and (max-width: 678px){
                 padding-left: 14px;
             }
+           
 
             .text-content {
                 color: #ffffff;
                 padding-top: 207px;
-                @media screen and (max-width: 678px){
-                    padding-top: 87px;
+                @media screen and (max-width: 1024px){
+                    padding-top: 120px;
                 }
+                @media screen and (max-width: 678px){
+                    padding-top: 87px;                    
+                }
+               
 
                 h3 {
                     font-size: 28px;
@@ -91,11 +103,16 @@
                     margin-bottom: 10px;
                     line-height: 33px;
                     font-size: 24px;
+                    @media screen and (max-width: 1024px){
+                        line-height: 25px;
+                         font-size: 20px;
+                    }
 
                     @media screen and (max-width: 678px){
                         line-height: 20px;
                         font-size: 13px; 
                     }
+                   
 
                 }
             }

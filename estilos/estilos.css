@@ -5,12 +5,17 @@ html {
 
 header {
   width: 100%;
-  height: 70px;
+  height: 72px;
   display: flex;
   align-items: center;
   background: #232323;
   color: #ccc;
   padding-left: 124px;
+}
+@media screen and (max-width: 1024px) {
+  header {
+    padding-left: 35px;
+  }
 }
 @media screen and (max-width: 678px) {
   header {
@@ -36,6 +41,11 @@ header {
   justify-content: center;
   width: 50%;
 }
+@media screen and (max-width: 1024px) {
+  .nav {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 678px) {
   .nav {
     margin: 0;
@@ -56,6 +66,11 @@ header {
 .navlink {
   list-style: none;
   margin: 0 16px 0 0;
+}
+@media screen and (max-width: 1024px) {
+  .navlink {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 678px) {
   .navlink {
@@ -109,6 +124,11 @@ header {
   background-size: cover;
   background-position: center;
 }
+@media screen and (max-width: 1024px) {
+  .hero-content .hero-img {
+    height: 570px;
+  }
+}
 @media screen and (max-width: 678px) {
   .hero-content .hero-img {
     height: 315px;
@@ -118,6 +138,11 @@ header {
   max-width: 1280px;
   margin: 0 auto;
 }
+@media screen and (max-width: 1024px) {
+  .hero-content .hero-img .hero-content-box {
+    padding-left: 35px;
+  }
+}
 @media screen and (max-width: 678px) {
   .hero-content .hero-img .hero-content-box {
     padding-left: 14px;
@@ -126,6 +151,11 @@ header {
 .hero-content .hero-img .hero-content-box .text-content {
   color: #ffffff;
   padding-top: 207px;
+}
+@media screen and (max-width: 1024px) {
+  .hero-content .hero-img .hero-content-box .text-content {
+    padding-top: 120px;
+  }
 }
 @media screen and (max-width: 678px) {
   .hero-content .hero-img .hero-content-box .text-content {
@@ -191,6 +221,12 @@ header {
   line-height: 33px;
   font-size: 24px;
 }
+@media screen and (max-width: 1024px) {
+  .hero-content .hero-img .hero-content-box .infostemporada .text {
+    line-height: 25px;
+    font-size: 20px;
+  }
+}
 @media screen and (max-width: 678px) {
   .hero-content .hero-img .hero-content-box .infostemporada .text {
     line-height: 20px;
@@ -208,6 +244,11 @@ header {
   background-size: cover;
   background-position: center;
 }
+@media screen and (max-width: 1024px) {
+  .hero-content .hero-img-selected {
+    height: 570px;
+  }
+}
 @media screen and (max-width: 678px) {
   .hero-content .hero-img-selected {
     height: 315px;
@@ -216,6 +257,11 @@ header {
 .hero-content .hero-img-selected .hero-content-box {
   max-width: 1280px;
   margin: 0 auto;
+}
+@media screen and (max-width: 1024px) {
+  .hero-content .hero-img-selected .hero-content-box {
+    padding-left: 35px;
+  }
 }
 @media screen and (max-width: 678px) {
   .hero-content .hero-img-selected .hero-content-box {
@@ -232,6 +278,11 @@ header {
 }
 .hero-content .hero-img-selected .hero-content-box .text-content .infodetails {
   margin: -30px 0 60px;
+}
+@media screen and (max-width: 1024px) {
+  .hero-content .hero-img-selected .hero-content-box .text-content .infodetails {
+    margin: -30px 0 0;
+  }
 }
 @media screen and (max-width: 678px) {
   .hero-content .hero-img-selected .hero-content-box .text-content .infodetails {
@@ -264,6 +315,11 @@ header {
 .hero-content .hero-img-selected .hero-content-box .button-box {
   width: 100%;
   margin: 30px 0 60px;
+}
+@media screen and (max-width: 1024px) {
+  .hero-content .hero-img-selected .hero-content-box .button-box {
+    margin: 10px 0 40px;
+  }
 }
 .hero-content .hero-img-selected .hero-content-box .button-box .btn-hero {
   width: 210px;
@@ -323,16 +379,27 @@ header {
   line-height: 33px;
   font-size: 24px;
 }
+@media screen and (max-width: 1024px) {
+  .hero-content .hero-img-selected .hero-content-box .infostemporada .text {
+    line-height: 25px;
+    font-size: 20px;
+  }
+}
 .hero-content .hero-img-selected .grandient-bg {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, #000000 100%);
   width: 100%;
   height: 300px;
   margin-top: -130px;
 }
+@media screen and (max-width: 1024px) {
+  .hero-content .hero-img-selected .grandient-bg {
+    height: 180px;
+    margin-top: -183px;
+  }
+}
 @media screen and (max-width: 678px) {
   .hero-content .hero-img-selected .grandient-bg {
-    margin-top: -100px;
-    height: 100px;
+    height: 175px;
   }
 }
 
@@ -346,6 +413,11 @@ header {
   color: #fff;
   font-size: 30px;
   font-weight: 100;
+}
+@media screen and (max-width: 1024px) {
+  .contenedor-titulo-controles h3 {
+    font-size: 25px;
+  }
 }
 @media screen and (max-width: 678px) {
   .contenedor-titulo-controles h3 {
@@ -363,9 +435,17 @@ header {
   margin: 0 auto;
   /* ---- ----- ----- Carousel ----- ----- ----- */
 }
+@media screen and (max-width: 1024px) {
+  .seriesbox .peliculas-recomendadas {
+    padding-left: 35px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+}
 @media screen and (max-width: 678px) {
   .seriesbox .peliculas-recomendadas {
     padding-left: 14px;
+    padding-bottom: 10px;
   }
 }
 .seriesbox .peliculas-recomendadas .contenedor-principal {
@@ -491,9 +571,14 @@ footer {
   margin: 0 auto;
   padding-bottom: 30px;
 }
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 1024px) {
   .chapter-wrapper .chapter-box {
     width: 95%;
+    margin-left: 35px;
+  }
+}
+@media screen and (max-width: 678px) {
+  .chapter-wrapper .chapter-box {
     margin-left: 14px;
     padding-bottom: 20px;
   }
@@ -503,6 +588,12 @@ footer {
   padding-bottom: 24px;
   font-size: 35px;
   display: inline-block;
+}
+@media screen and (max-width: 1024px) {
+  .chapter-wrapper .chapter-box h3 {
+    font-size: 25px;
+    padding-top: 20px;
+  }
 }
 @media screen and (max-width: 678px) {
   .chapter-wrapper .chapter-box h3 {
@@ -537,12 +628,8 @@ footer {
 }
 @media screen and (max-width: 678px) {
   .chapter-wrapper .chapter-box .chapter-box-details .info .description {
-    font-size: 10px;
-  }
-}
-@media screen and (max-width: 678px) {
-  .chapter-wrapper .chapter-box .chapter-box-details .info .description {
-    max-width: 215px;
+    max-width: 230px;
+    font-size: 13px;
   }
 }
 
