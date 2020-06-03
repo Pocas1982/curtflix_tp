@@ -11,10 +11,13 @@ header {
   background: #232323;
   color: #ccc;
   padding-left: 124px;
+  position: fixed;
+  z-index: 10;
 }
 @media screen and (max-width: 1024px) {
   header {
     padding-left: 35px;
+    background: #232323;
   }
 }
 @media screen and (max-width: 678px) {
@@ -50,7 +53,7 @@ header {
   .nav {
     margin: 0;
     background: #232323;
-    position: absolute;
+    position: fixed;
     left: -100%;
     top: 70px;
     width: 50%;
@@ -428,6 +431,10 @@ header {
 /* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
 .seriesbox {
   background-color: #000000;
+}
+.seriesbox .hiperlinkbox {
+  position: relative;
+  bottom: 72px;
 }
 .seriesbox .peliculas-recomendadas {
   padding-bottom: 70px;

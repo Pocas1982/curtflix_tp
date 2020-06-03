@@ -1,6 +1,4 @@
-//Variables
-$colorBlack: rgba(0, 0, 0, 0.801218);
-$colorButton: rgba(157, 151, 151, 0.541521);
+
 
 html {
     scroll-behavior: smooth;
@@ -11,12 +9,14 @@ header {
     height: 72px;
     display: flex;
     align-items: center;
-    // justify-content: space-around;
     background: #232323;
     color: #ccc;
     padding-left: 124px;
+    position: fixed;
+    z-index: 10;
     @media screen and (max-width: 1024px){
         padding-left: 35px;
+        background: #232323;
     }
    
     @media screen and (max-width: 678px){
@@ -49,7 +49,7 @@ header {
     @media screen and (max-width: 678px){
         margin: 0;
         background: #232323;
-        position: absolute;
+        position: fixed;
         left: -100%;
         top: 70px;
         width: 50%;
@@ -108,5 +108,6 @@ i.fas.fa-bars, i.fas.fa-times {
 
     @media screen and (max-width: 678px){
          left: 0;
+         
     }
 }
